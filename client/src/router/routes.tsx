@@ -15,17 +15,13 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: (
-          <Suspense fallback={<LoadingPage message="Loading Home…" />}>
             <HomePage />
-          </Suspense>
         ),
       },
       {
         path: "about",
         element: (
-          <Suspense fallback={<LoadingPage message="Loading About…" />}>
             <AboutPage />
-          </Suspense>
         ),
       },
       {
